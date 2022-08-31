@@ -8,13 +8,31 @@
 import SwiftUI
 
 struct StartButtonView: View {
+    
+//    Mark: Properties
+    
+//    Mark: Body
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button(action: {
+            print("Exit the onboarding")
+        }){
+            HStack {
+                Text("Start")
+                Image(systemName: "arrow.right.circle")
+                    .imageScale(.large)
+            }
+            .padding(.horizontal, 16)
+            .padding(.vertical, 10)
+        } //: Button
+        .accentColor(Color.white)
     }
 }
+//    Mark: Preview
 
 struct StartButtonView_Previews: PreviewProvider {
     static var previews: some View {
         StartButtonView()
+            .preferredColorScheme(.dark)
+            .previewLayout(.sizeThatFits)
     }
 }
