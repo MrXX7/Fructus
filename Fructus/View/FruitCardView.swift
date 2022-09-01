@@ -10,6 +10,8 @@ import SwiftUI
 struct FruitCardView: View {
     
 //    Mark: - Properties
+    var fruit: Fruit
+    
     @State private var isAnimating: Bool = false
     
 //    Mark: - Body
@@ -54,7 +56,7 @@ struct FruitCardView: View {
 
 struct FruitCardView_Previews: PreviewProvider {
     static var previews: some View {
-        FruitCardView()
+        FruitCardView(fruit: fruitsData[1])
             .previewLayout(.fixed(width: 320, height: 640))
     }
 }
