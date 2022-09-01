@@ -23,6 +23,8 @@ struct StartButtonView: View {
             }
             .padding(.horizontal, 16)
             .padding(.vertical, 10)
+            .background(
+                Capsule().strokeBorder(Color.white, lineWidth: 1.25))
         } //: Button
         .accentColor(Color.white)
     }
