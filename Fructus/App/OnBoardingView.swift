@@ -8,10 +8,21 @@
 import SwiftUI
 
 struct OnBoardingView: View {
+//    Mark: Properties
+    
+//    Mark: Body
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView {
+            ForEach(0..<5) { item in
+                FruitCardView()
+            }
+        }
+        .tabViewStyle(PageTabViewStyle())
+        .padding(.vertical, 20)
     }
 }
+
+//    Mark: Preview
 
 struct OnBoardingView_Previews: PreviewProvider {
     static var previews: some View {
