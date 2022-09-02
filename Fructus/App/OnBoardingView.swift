@@ -10,6 +10,7 @@ import SwiftUI
 struct OnBoardingView: View {
 //    Mark: Properties
     
+    
     var fruits: [Fruit] = fruitsData
     
 //    Mark: Body
