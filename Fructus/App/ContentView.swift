@@ -34,6 +34,7 @@ struct ContentView: View {
             )
             .listStyle(.inset)
         }
+        .navigationViewStyle(StackNavigationViewStyle())
         
     }
 }
